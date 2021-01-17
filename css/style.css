@@ -117,3 +117,46 @@ ul a li{
     color: var(--darkGray);
     /* font-size: 1.8rem; */
 }
+/*Creaciones*/
+.creation-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.creation-title h2{
+    margin: 0;
+}
+.creation-title a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 5rem;
+    border: 3px solid var(--veryDarkGray);
+    color: var(--veryDarkGray);
+}
+.creation-images{
+    border: 1px solid black;
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-evenly; */
+}
+.item{
+    margin: 1.8rem;
+    height: 450px;
+    /* flex-basis: 250px; */
+    width: 100%;
+    max-width: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+    /* text-align: end; */
+    display: flex;
+    align-items: flex-end;
+}
+.item:nth-child(1){
+    background-image: url(../images/desktop/image-deep-earth.jpg);
+    /* background-clip: border-box; */
+}
+.item:nth-child(2){
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+}
