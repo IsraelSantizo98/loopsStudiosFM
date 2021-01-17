@@ -1,9 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 :root{
     --whiteColor: hsl(0, 0%, 100%);
     --blackColor: hsl(0, 0%, 0%);
     --darkGray: hsl(0, 0%, 55%);
     --veryDarkGray: hsl(0, 0%, 41%);
-    --fontSize: 15px;
-    --fontFamily: 'Alata', san-serif;
-    --fontFamily2: 'Josefina Sans', san-serif;
+    --fonSize: 1.5rem;
+    --fontFtamily: 'Alata', sans-serif;
+    --fontFamily2: 'Josefin Sans', sans-serif;
+}
+html {
+    /* Reset para rems 62.5% = 10px */
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+h1{
+    text-transform: uppercase;
+    color: var(--whiteColor);
+    font-family: var(--fontFamily2);
+    font-size: 7rem;
+    border: 3px solid white;
+    font-weight: 300;
+    padding: 2rem;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontFtamily);
+    font-size: var(--fonSize);
+}
+.wrapper{
+    max-width: 130rem;
+    margin: 0 auto;
+}
+.header{
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 6rem;
+}
+ul{
+    display: flex;
+}
+ul a{
+    text-decoration: none;
+}
+ul a li{
+    list-style: none;
+    color: var(--whiteColor);
+    margin-left: 3rem;
+    font-size: 1.8rem;
+}
+.header-title{
+    height: 40rem;
+    width: 100rem;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+}
+.container-title{
+    height: inherit;
+    max-width: 60rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
