@@ -40,6 +40,9 @@ body{
     font-family: var(--fontFtamily);
     font-size: var(--fonSize);
 }
+figure{
+    margin: 0;
+}
 .division-section{
     margin: 16rem 0;
 }
@@ -87,37 +90,30 @@ ul a li{
 }
 /*Section interactive*/
 .container-interactive{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 70rem;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     position: relative;
     padding: 6rem;
 }
 .container-interactive-image{
     height: 80%;
     width: 100%;
-    background-image: url(../images/desktop/image-interactive.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: red;
-}
-.container-interactive-image img{
-    width: 100%;
-    max-width: 500px; 
+    /* border: 1px solid black; */
 }
 .container-interactive-text{
     /* border: 1px solid black; */
     background-color: var(--whiteColor);
-    height: 30rem;
-    width: 45rem;
-    padding: 1rem;
     position: absolute;
-    top: 50%;
-    left: 40%;
+    top: 40%;
+    left: 50%;
+    height: 40rem;
+    width: 55rem;
+    padding: 5rem 5rem;
 }
 .container-interactive-text p{
     color: var(--darkGray);
+    /* font-size: 1.8rem; */
 }
