@@ -68,12 +68,31 @@ ul{
 }
 ul a{
     text-decoration: none;
+    position: relative;
+    margin-left: 3rem;
 }
 ul a li{
     list-style: none;
     color: var(--whiteColor);
-    margin-left: 3rem;
     font-size: 1.8rem;
+    padding-bottom: .5rem;
+    /* border: 1px solid white; */
+}
+ul a li:before{
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--whiteColor);
+    transition: all .3s;
+}
+ul a li:hover:before{
+    width: 100%;
+}
+ul a li:before{
+    left: 0;
 }
 .header-title{
     height: 40rem;
@@ -86,7 +105,7 @@ ul a li{
     max-width: 60rem;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-start;
+    /* justify-content: flex-end; */
 }
 /*Section interactive*/
 .container-interactive{
@@ -133,6 +152,11 @@ ul a li{
     border: 3px solid var(--veryDarkGray);
     color: var(--veryDarkGray);
 }
+.creation-title a:hover{
+    background-color: black;
+    color: white;
+    /* border: 1px solid black; */
+}
 .creation-images{
     /* border: 1px solid black; */
     flex-basis: 100%;
@@ -154,6 +178,13 @@ ul a li{
     display: flex;
     align-items: flex-end;
 }
+.item:hover{
+    /* filter: brightness(2); */
+    /* filter: grayscale(50%); */
+    filter: opacity(75%);
+    /* color: black; */
+    font-size: 1.8rem;
+}
 .item h3{
     margin-left: 3.5rem;
     max-width: 20rem;
@@ -167,12 +198,14 @@ ul a li{
 }
 .item:nth-child(1){
     background-image: url(../images/desktop/image-deep-earth.jpg);
+    color: white;
     /* text-align: center; */
     /* background-clip: border-box; */
 }
 .item:nth-child(2){
     background-image: url(../images/desktop/image-night-arcade.jpg);
 }
+
 .item:nth-child(3){
     background-image: url(../images/desktop/image-soccer-team.jpg);
 }
