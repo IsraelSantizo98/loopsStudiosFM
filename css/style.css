@@ -328,10 +328,24 @@ footer{
         padding: 0;
     }
     .container-interactive-title{
-        width: 80%;
+        width: 100%;
+        max-height: 300px;
         margin: 0;
+        padding: 0 .5rem;
+        /* border: 1px solid black; */
+        text-align: center;
+    }
+    .container-interactive-title h2{
+        font-size: 3.5rem;
+    }
+    .container-interactive-p{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        /* border: 1px solid black; */
+
     }
     .container-interactive-text p{
-        text-align: justify;
+        text-align: center;
     }
 }
